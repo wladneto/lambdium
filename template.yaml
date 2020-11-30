@@ -16,7 +16,7 @@ Resources:
       Description: Headless Chromium and Selenium WebDriver
       ContentUri: ./layer
       CompatibleRuntimes:
-        - nodejs8.10
+        - nodejs10.x
         - python3.7
         - python2.7
         - go1.x
@@ -28,7 +28,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       FunctionName: lambdium
       Description: headless chromium running selenium
       # This needs to be fairly large: chromium needs a lot of memory
